@@ -1,13 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>netstandard2.0;net5.0;net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>10</LangVersion>
+    <Authors>Victor Divino</Authors>
+    <Product>OperationResultExtensions</Product>
+    <PackageId>Divino.OperationResultExtensions</PackageId>
+    <Description>This package contains useful extensions for the OperationResult (Divino.OperationResult).</Description>
+    <PackageTags>error handling operation result extensions</PackageTags>
+    <PackageProjectUrl>https://github.com/victorDivino/operationResultExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/victorDivino/operationResultExtensions</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+     <releaseNotes>
+      ## Version 1.0.0 ##
+      - Useful extensions for the OperationResult (Divino.OperationResult)
+    </releaseNotes>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Divino.OperationResult" Version="3.0.0" />
   </ItemGroup>
-
 </Project>
