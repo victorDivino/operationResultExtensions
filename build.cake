@@ -19,7 +19,7 @@ Task("Publish")
 	.IsDependentOn("Build")
     .Does(() =>
 {
-    NuGetPush($"./src/OperationResult/bin/{configuration}/Divino.OperationResultExtensions.{nugetVersion}.nupkg", new NuGetPushSettings {
+    NuGetPush($"./src/OperationResult.Extensions/bin/{configuration}/Divino.OperationResultExtensions.{nugetVersion}.nupkg", new NuGetPushSettings {
         Source = nugetSource,
         ApiKey = nugetKey,
         SkipDuplicate = true
